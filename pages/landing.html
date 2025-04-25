@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      {{> header}}
+      <main>
+        <section class="hero" style="background-image: url(&quot;/images/Geometric shapes.webp&quot;)">
+          <div class="hero__container container">
+            <div class="hero__content">
+              <h1>
+                Quality Home Care <br />
+                <em>You Can Trust</em>
+              </h1>
+              <p>Compassionate, Reliable, and Tailored In-Home Support for Your Loved Ones</p>
+              <div class="hero__bottom">
+                <a href="#" class="button button_dark">Get Started Today</a>
+                <div class="hero__bottom-text">
+                  <p>
+                    Now Accepting Private Pay, <br />
+                    Long-Term Care Insurance (LTCI), <br />
+                    and Veterans Benefits.
+                  </p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <path d="M0 60C0 26.8637 26.8623 0 60 0V60H0Z" fill="#111747" />
+                    <path d="M20 60C20 37.9092 37.9082 20 60 20V60H20Z" fill="#009FB7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      {{> footer}}
+    </div>
+    <script type="module" src="../src/scripts/main.ts" defer></script>
+  </body>
+</html>

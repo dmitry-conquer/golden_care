@@ -3,11 +3,14 @@
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
-  --color-accent: #d35b5b;
+  --color-dark-blue: #111747;
+  --color-light: #FFF5E5;
+  --color-primary: #ffbc02;
+  --color-secondary: #009fb7;
 
-  --font-family-base: "Roboto", sans-serif;
-  --font-family-accent: "Roboto", sans-serif;
+  --font-family-base: "DroidSans", sans-serif;
+  --font-family-accent: "Baskervville", serif;
 
-  --container-width: #{rem(1440)};
-  --container-padding-x: #{rem(20)};
+  --container-width: #{rem(1712)};
+  --container-padding-x: #{rem(16)};
 }

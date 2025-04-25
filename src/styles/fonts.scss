@@ -1,6 +1,5 @@
-@use "helpers" as *;
-
-@include font-face("Roboto", "Roboto-Thin", 300);
-@include font-face("Roboto", "Roboto-Regular", 400);
-@include font-face("Roboto", "Roboto-Medium", 500);
-@include font-face("Roboto", "Roboto-Bold", 700);
+@use "helpers/" as *;
+@include font-face(DroidSans, DroidSans, 400);
+@include font-face(DroidSans, DroidSans-Bold, 700);
+@include font-face(Baskervville, Baskervville-Regular, 400);
+@include font-face(Baskervville, Baskervville-Italic, 400, italic);
