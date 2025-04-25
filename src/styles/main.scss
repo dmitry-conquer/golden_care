@@ -6,7 +6,15 @@
 @use "helpers" as *;
 
 // Importing components
-@use './components/footer';
-@use './components/header';
-@use './components/button';
-@use './components/hero';
+@use "./components/footer";
+@use "./components/header";
+@use "./components/button";
+@use "./components/hero";
+@use "./components/row";
+@use "./components/custom-ol";
+@use "./components/cta";
+@use "./components/services";
+@use "./components/testimonials";
+
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/pagination/pagination.scss";

@@ -61,8 +61,16 @@ a:not([class]) {
   }
 }
 
+p {
+  line-height: 1.5;
+}
+
 p:not([class]):not(:last-of-type) {
   margin-bottom: rem(16);
+}
+
+.section {
+  padding-block: fluid(36, 60);
 }
 
 @include medium {

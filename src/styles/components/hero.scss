@@ -6,11 +6,13 @@
   background-position: right bottom;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-bottom: fluid(0, 60);
   @include large {
     background-size: 55%;
   }
   @include small {
     background-size: 86%;
+    margin-bottom: 0;
   }
   &__content {
     max-width: 51%;
