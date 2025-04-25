@@ -9,6 +9,11 @@
       }
     }
   }
+  &_small-gap {
+    .row__body {
+      column-gap: rem(40);
+    }
+  }
   &__container {
   }
   &__title {
@@ -43,12 +48,12 @@
       margin-bottom: fluid(24, 40);
     }
     h3 {
-      margin-block: rem(24);
+      margin-bottom: rem(8);
     }
     p {
-      margin-block: rem(24);
+      margin-bottom: rem(32) !important;
       &:last-child {
-        margin-bottom: 0;
+        margin-bottom: 0 !important;
       }
     }
     ul li {

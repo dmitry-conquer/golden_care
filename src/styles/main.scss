@@ -16,5 +16,5 @@
 @use "./components/services";
 @use "./components/testimonials";
 
-@import "../../node_modules/swiper/swiper.scss";
-@import "../../node_modules/swiper/modules/pagination/pagination.scss";
+@import "../../node_modules/swiper/swiper.min.css";
+@import "../../node_modules/swiper/modules/pagination/pagination.min.css";
