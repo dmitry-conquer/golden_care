@@ -9,7 +9,7 @@
     <div class="wrapper">
       {{> header}}
       <main>
-        <section class="hero" style="background-image: url(&quot;/images/Geometric shapes.webp&quot;)">
+        <section id="home" class="hero" style="background-image: url(&quot;/images/Geometric shapes.webp&quot;)">
           <div class="hero__container container">
             <div class="hero__content">
               <h1>
@@ -284,8 +284,13 @@
           </div>
         </section>
       </main>
-      {{> footer}}
+      {{> ui/back-top-button}} {{> footer}}
     </div>
+    <script>
+      const acfData = {
+        smoothScroll: true,
+      };
+    </script>
     <script type="module" src="../src/scripts/main.ts" defer></script>
   </body>
 </html>

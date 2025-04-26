@@ -6,8 +6,8 @@
 @use "helpers" as *;
 
 // Importing components
-@use "./components/footer";
 @use "./components/header";
+@use "./components/footer";
 @use "./components/button";
 @use "./components/hero";
 @use "./components/row";
@@ -15,6 +15,7 @@
 @use "./components/cta";
 @use "./components/services";
 @use "./components/testimonials";
+@use "./components/back-top-button";
 
 @import "../../node_modules/swiper/swiper.min.css";
 @import "../../node_modules/swiper/modules/pagination/pagination.min.css";
