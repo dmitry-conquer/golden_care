@@ -5,11 +5,9 @@ import "../styles/main.scss";
 
 document.addEventListener("DOMContentLoaded", () => {
   new Sliders();
+  new BackTopButton();
 
   const scroll = new Scroll();
   scroll.initSmoothScroll();
   scroll.initAOS();
-
-  const backTopButton = new BackTopButton();
-  backTopButton.init();
 });
