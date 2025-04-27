@@ -9,9 +9,17 @@
       }
     }
   }
+
   &_small-gap {
     .row__body {
       column-gap: rem(40);
+    }
+    .row__content,
+    .row__image {
+      flex: 0 1 50%;
+      @include large {
+        flex: 0 1 100%;
+      }
     }
   }
   &__container {
@@ -29,7 +37,7 @@
     }
   }
   &__image {
-    flex: 0 1 50%;
+    flex: 0 1 rem(708);
     @include large {
       flex: 0 1 100%;
     }
@@ -40,9 +48,17 @@
     }
   }
   &__content {
-    flex: 0 1 50%;
+    flex: 0 1 rem(830);
     @include large {
       flex: 0 1 100%;
+    }
+    .colored {
+      color: var(--color-secondary);
+      text-align: center;
+      font-size: fluid(20, 24);
+      font-weight: 700;
+      line-height: 1.5;
+      margin-top: fluid(18, 24);
     }
     h2 {
       margin-bottom: fluid(24, 40);

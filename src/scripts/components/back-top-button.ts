@@ -11,6 +11,10 @@ export default class BackTopButton {
     this.scrollOffset = scrollOffset || this.scrollOffset;
     this.targetID = targetID || this.targetID;
     this.rootElement = this.createElement();
+    this.init();
+  }
+
+  private init(): void {
     if (!this.rootElement) return;
     this.bindEvents();
   }
@@ -30,10 +34,9 @@ export default class BackTopButton {
   }
 
   private toggleVisibility = () => {
-    if (!this.rootElement) return;
     const isVisible = window.scrollY > this.scrollOffset;
-    this.rootElement.setAttribute("aria-hidden", `${!isVisible}`);
-    this.rootElement.classList.toggle(this.states.isVisible, isVisible);
+    this.rootElement!.setAttribute("aria-hidden", `${!isVisible}`);
+    this.rootElement!.classList.toggle(this.states.isVisible, isVisible);
     this.isTicking = false;
   };
 
