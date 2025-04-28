@@ -2,10 +2,16 @@
 
 .row {
   &_reverse {
-    .row__body {
-      flex-direction: row-reverse;
+    .row__image {
+      flex: 0 1 rem(830);
       @include large {
-        flex-direction: column-reverse;
+        flex: 0 1 100%;
+      }
+    }
+    .row__content {
+      flex: 0 1 rem(708);
+      @include large {
+        flex: 0 1 100%;
       }
     }
   }
