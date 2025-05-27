@@ -1,12 +1,8 @@
-//@ts-expect-error swiper dont need types
-import Swiper, { Navigation, Pagination, A11y } from "swiper";
-
 class Sliders {
   private readonly sliders = [
     {
       selector: "#testimonials-slider",
       options: {
-        modules: [Navigation, Pagination, A11y],
         loop: true,
         speed: 900,
         slidesPerView: 3.7,
@@ -48,7 +44,9 @@ class Sliders {
   initSliders() {
     this.sliders.forEach(slider => {
       if (document.querySelector(slider.selector)) {
+        //@ts-expect-error Swiper is a global variable provided by the Swiper library
         if (typeof Swiper !== "undefined") {
+          //@ts-expect-error Swiper is a global variable provided by the Swiper library
           new Swiper(slider.selector, slider.options);
         }
       }
